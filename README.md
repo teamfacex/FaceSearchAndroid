@@ -127,7 +127,7 @@ FaceDetection faceDetection;
         faceDetection = FaceDetection(this@KotlinActivity)
         
         }
- }       
+      
   // For Automatic FaceSearch
     
     val intent = Intent(this@KotlinActivity, DetectorActivity::class.java)
