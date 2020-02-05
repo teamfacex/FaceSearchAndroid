@@ -70,17 +70,20 @@ FaceDetection faceDetection;
                      User user = faceSearch.getData().getUser().get(0);
                 }
             });
-            
+        }   
             
  // For Manual Face Add
+          
           faceDetection.addUser(MainActivity.this, new File(filePath), new FaceDetection.ManualUserAddInterface() {
                 @Override
                 public void onResponse(boolean b, String s) {
                    
                 }
             });
+          }  
             
   //For Manual Face with Approval
+          
           faceDetection.addUserWithApproval(MainActivity.this, filePath, name, new FaceDetection.ManualUserWithApproval() {                                              
                 @Override
                 public void onUserApprovalResponse(boolean b, String s) {
@@ -122,10 +125,12 @@ class KotlinActivity : AppCompatActivity() {
 
         faceDetection = FaceDetection(this@KotlinActivity)
   // For Automatic FaceSearch
-      val intent = Intent(this@KotlinActivity, DetectorActivity::class.java)
+    
+    val intent = Intent(this@KotlinActivity, DetectorActivity::class.java)
         startActivityForResult(intent, 123)
 
 // For Manual FaceSearch
+    
     faceDetection!!.getFaceresult(this@KotlinActivity, selectedImage) { faceSearch ->
                 Log.e("faceSearch", Gson().toJson(faceSearch))
                
