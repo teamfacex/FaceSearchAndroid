@@ -70,6 +70,8 @@ FaceDetection faceDetection;
                      User user = faceSearch.getData().getUser().get(0);
                 }
             });
+            
+            
  // For Manual Face Add
           faceDetection.addUser(MainActivity.this, new File(filePath), new FaceDetection.ManualUserAddInterface() {
                 @Override
@@ -79,14 +81,15 @@ FaceDetection faceDetection;
             });
             
   //For Manual Face with Approval
-          faceDetection.addUserWithApproval(MainActivity.this, filePath, name, new                                FaceDetection.ManualUserWithApproval() {
+          faceDetection.addUserWithApproval(MainActivity.this, filePath, name, new FaceDetection.ManualUserWithApproval() {                                              
                 @Override
                 public void onUserApprovalResponse(boolean b, String s) {
                     Log.e("boolean", b + "/" + s);
                 }
             }); 
- 
-    }
+     }
+    
+    
     
       @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
