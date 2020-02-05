@@ -116,7 +116,8 @@ FaceDetection faceDetection;
 
 ## For Kotlin 
 
-class KotlinActivity : AppCompatActivity() {
+   class KotlinActivity : AppCompatActivity() {
+
      var faceDetection: FaceDetection? = null
      
       override fun onCreate(savedInstanceState: Bundle?) {
