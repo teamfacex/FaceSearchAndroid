@@ -142,10 +142,8 @@ class KotlinActivity : AppCompatActivity() {
  faceDetection!!.addUser(this@KotlinActivity, File(filePath)) { b, s -> }
  
 //For Manual FaceAdd with approval
-
-  faceDetection!!.addUserWithApproval(this@KotlinActivity, filePath, name!!.text.toString()) { b, s ->  }
-
-
+ 
+ faceDetection!!.addUserWithApproval(this@KotlinActivity, filePath, name!!.text.toString()) { b, s ->  }
 }
 
  
