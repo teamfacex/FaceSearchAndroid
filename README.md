@@ -124,6 +124,9 @@ class KotlinActivity : AppCompatActivity() {
         setContentView(R.layout.activity_kotlin3)
 
         faceDetection = FaceDetection(this@KotlinActivity)
+        
+        }
+ }       
   // For Automatic FaceSearch
     
     val intent = Intent(this@KotlinActivity, DetectorActivity::class.java)
