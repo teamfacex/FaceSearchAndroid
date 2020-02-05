@@ -116,6 +116,7 @@ FaceDetection faceDetection;
 
 ## For Kotlin 
 
+## Initialize 
    class KotlinActivity : AppCompatActivity() {
 
      var faceDetection: FaceDetection? = null
