@@ -10,7 +10,9 @@ Application can run either on device or emulator only in front camera
 ### Building or Download
 * Open Android Studio, and from the Welcome screen, select Open an existing Android Studio project.
 
-* add  face_search.aar file in libs folder.
+* add  face_search.aar file in libs folder.if you dont have downloaf using below link 
+
+https://github.com/teamfacex/FaceSearchAndroid/releases/latest/download/face_search.aar
 * add following dependencies app level
 
 
